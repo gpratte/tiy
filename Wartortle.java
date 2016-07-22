@@ -23,6 +23,7 @@ public class Wartortle extends Squirtle {
 		
 		System.out.println(wartortle.toString());
 		System.out.println(wartortle.speak());
+		System.out.println(wartortle.growl());
 
 		wartortle.dive();
 		wartortle.scald();

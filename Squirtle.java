@@ -7,11 +7,20 @@ public class Squirtle extends BasePokemon implements WaterType {
 		defense = 44;
 	}
 	
+	public String growl() {
+		return "steam";
+	}
+	
 	public void dive() {
 		System.out.println("diving");
 	}
 	public void scald() {
 		System.out.println("scalding");
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + ", type=WaterType";
 	}
 
 	public static void main(String[] args) {
@@ -19,6 +28,7 @@ public class Squirtle extends BasePokemon implements WaterType {
 		
 		System.out.println(squirtle.toString());
 		System.out.println(squirtle.speak());
+		System.out.println(squirtle.growl());
 
 		squirtle.dive();
 		squirtle.scald();
