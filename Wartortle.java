@@ -23,6 +23,7 @@ public class Wartortle extends Squirtle {
 
 		System.out.println(wartortle.toString());
 		System.out.println(wartortle.speak());
+		System.out.println(wartortle.growl());
 
 		wartortle.dive();
 		wartortle.scald();
@@ -30,7 +31,7 @@ public class Wartortle extends Squirtle {
 		wartortle.whirlpool();
 		
 		System.out.println("Is Wartortle an instance of BasePokemon " + (wartortle instanceof BasePokemon));
-		System.out.println("Is Wartortle an instance of BasePokemon " + (wartortle instanceof Squirtle));
+		System.out.println("Is Wartortle an instance of Squirtle " + (wartortle instanceof Squirtle));
 
 	}
 
