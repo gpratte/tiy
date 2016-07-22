@@ -7,15 +7,23 @@ public class Squirtle extends BasePokemon implements WaterType, BasicWaterMoves 
 		defense = 44;
 	}
 
-	// Uncomment to successfully compile
-//	public void brine() {
-//		System.out.println("brining");
-//	}
+	public String growl() {
+		return "steam";
+	}
+
+	public void brine() {
+		System.out.println("brining");
+	}
 	public void dive() {
 		System.out.println("diving");
 	}
 	public void scald() {
 		System.out.println("scalding");
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + ", type=WaterType";
 	}
 
 	public static void main(String[] args) {
@@ -23,6 +31,7 @@ public class Squirtle extends BasePokemon implements WaterType, BasicWaterMoves 
 		
 		System.out.println(squirtle.toString());
 		System.out.println(squirtle.speak());
+		System.out.println(squirtle.growl());
 
 		squirtle.brine();
 		squirtle.dive();

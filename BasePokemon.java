@@ -5,6 +5,7 @@ public abstract class BasePokemon {
 	protected int attack;
 	protected int defense;
 
+	// Getters and Setters
 	public String getName() {
 		return name;
 	}
@@ -29,9 +30,12 @@ public abstract class BasePokemon {
 		this.defense = defense;
 	}
 
+	// Behavior
 	public String speak() {
 		return "";
 	}
+	
+	public abstract String growl();
 
 	@Override
 	public String toString() {

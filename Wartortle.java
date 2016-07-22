@@ -23,6 +23,7 @@ public class Wartortle extends Squirtle implements AdvancedWaterMoves {
 		
 		System.out.println(wartortle.toString());
 		System.out.println(wartortle.speak());
+		System.out.println(wartortle.growl());
 
 		wartortle.brine();
 		wartortle.dive();
