@@ -1,5 +1,5 @@
 
-public class Wartortle extends Squirtle {
+public class Wartortle extends Squirtle implements AdvancedWaterMoves {
 
 	public Wartortle() {
 		name = "Wartortle";
@@ -24,6 +24,7 @@ public class Wartortle extends Squirtle {
 		System.out.println(wartortle.toString());
 		System.out.println(wartortle.speak());
 
+		wartortle.brine();
 		wartortle.dive();
 		wartortle.scald();
 		wartortle.steamEruption();
@@ -32,6 +33,8 @@ public class Wartortle extends Squirtle {
 		System.out.println("Is Wartortle an instance of BasePokemon " + (wartortle instanceof BasePokemon));
 		System.out.println("Is Wartortle an instance of Squirtle " + (wartortle instanceof Squirtle));
 		System.out.println("Is Wartortle an instance of WaterType " + (wartortle instanceof WaterType));
+		System.out.println("Is Wartortle an instance of BasicWaterMoves " + (wartortle instanceof BasicWaterMoves));
+		System.out.println("Is Wartortle an instance of AdvancedWaterMoves " + (wartortle instanceof AdvancedWaterMoves));
 
 	}
 

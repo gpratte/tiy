@@ -1,12 +1,16 @@
 
-public class Squirtle extends BasePokemon implements WaterType {
+public class Squirtle extends BasePokemon implements WaterType, BasicWaterMoves {
 
 	public Squirtle() {
 		name = "Squirtle";
 		attack = 33;
 		defense = 44;
 	}
-	
+
+	// Uncomment to successfully compile
+//	public void brine() {
+//		System.out.println("brining");
+//	}
 	public void dive() {
 		System.out.println("diving");
 	}
@@ -20,11 +24,13 @@ public class Squirtle extends BasePokemon implements WaterType {
 		System.out.println(squirtle.toString());
 		System.out.println(squirtle.speak());
 
+		squirtle.brine();
 		squirtle.dive();
 		squirtle.scald();
 		
 		System.out.println("Is Squirtle an instance of BasePokemon " + (squirtle instanceof BasePokemon));
 		System.out.println("Is Squirtle an instance of WaterType " + (squirtle instanceof WaterType));
+		System.out.println("Is Squirtle an instance of BasicWaterMoves " + (squirtle instanceof BasicWaterMoves));
 	}
 
 }
